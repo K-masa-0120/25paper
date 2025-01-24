@@ -101,18 +101,11 @@
 		it
 	}
 	outline(
-		title: [#text(size: 1.3em, weight: "medium", "目次") #v(2em)], 
+		title: [#text(size: 1.3em, font: sans,weight: "medium", "目次") #v(2em)], 
 		indent: 2em,
 	)
 	pagebreak()
 	doc
-	bibliography(
-		"reference.bib" 
-		// full: true,
-	)
-	pagebreak()
-	set page(numbering: none)
-	include "chapter99/chapter99.typ"
 }
 
 #let mainPage(doc) = {
