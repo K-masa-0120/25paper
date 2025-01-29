@@ -1,6 +1,6 @@
 // 参考文献の形式設定
-#let bibliography-title = "参考文献"
-#let cite = (key) => super(text("[", key, "]"))
+/*#let bibliography-title = "参考文献"
+#let cite = (key) => super(text("[", key, "]"))*/
 
 // フォントの設定
 // google Font(https://fonts.google.com/)から以下のフォントをダウンロードし、各OSのシステムにインストールしてください。
