@@ -10,7 +10,7 @@
 #let serif = ("Noto Serif JP")
 
 // text setting
-#set text(lang: "ja", font: serif, 12pt)
+#set text(font: serif, 12pt)
 #set par(justify: true, first-line-indent: 1em, spacing: 0.65em)
 
 // 図表キャプションのカスタマイズ
@@ -84,9 +84,9 @@
 	set page(
 		margin: (
 			top: 25mm, 
-			bottom: 25mm, 
-			left: 15mm, 
-			right: 15mm
+			bottom: 20mm, 
+			left: 20mm, 
+			right: 20mm
 		),
 		numbering: "1"
 	)
@@ -109,15 +109,9 @@
 }
 
 #let mainPage(doc) = {
-	set page(margin: (
-		top: 25mm, 
-		bottom: 25mm, 
-		left: 15mm, 
-		right: 15mm 
-		)
-	)
 	set math.equation(numbering: "(1)")
 	set text(font: serif, size: 12pt)
+	//set ref(supplement:none)
 	set par(justify: true, first-line-indent: 1em, spacing: 0.65em)
 	set heading(numbering: "1.1 ")
 	show heading.where(level: 1): set heading(numbering: "第1章 ")

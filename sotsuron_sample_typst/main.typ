@@ -15,7 +15,7 @@
 // can optionally be added here.
 #show figure: i-figured.show-figure
 // a similar function exists for math equations
-#show math.equation: i-figured.show-equation
+//#show math.equation: i-figured.show-equation
 
 //↓ここから書き換える
 #show: doc => titlePage(
@@ -48,6 +48,7 @@
 // 謝辞はchapter99/chapter99.typに書く
 #pagebreak()
 #heading(numbering: none, [参考文献])
+#set text(lang: "en")
 #bibliography(
 	"reference.bib",
   title: none
